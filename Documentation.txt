@@ -1,0 +1,27 @@
+// ARGUMENTS:
+// fileId algType maxTasksNum maxCapacity maxDemand
+
+
+// ALGORITHMS:
+// "123"--> First Fit (-)
+// "145"--> Best Fit (Sunday)
+// "170"--> Bucket First Fit (Sunday)
+
+// DBP MinUsageTime:
+// "000"--> Duration Descending FF (-)
+// "001"--> Duration Descending BF (-)
+// "010"--> Dual Coloring (Saturday)
+// "100"--> Classify by Departure FF (Friday)
+// "101"--> Classify by Departure BF (Friday)
+// "110"--> Classify by Duration FF (Friday)
+// "111"--> Classify by Duration BF (Friday)
+
+// TSUCS:
+// "20"--> APT+AD+BF (-)
+// "21"--> APT+RD+BF (-)
+
+// HYBRID ALGORITHMS:
+// "0100"--> Dual Coloring with Phase 2 being Best Fit (Saturday)
+// "0101"--> Dual Coloring with Phase 1 being Duration Descending (Saturday)
+// "1011"--> Classify by Departure combined with Classify by Duration BF (-)
+// "1012"--> Classify by Departure Best Fit combined with remaining duration strategy (-)
